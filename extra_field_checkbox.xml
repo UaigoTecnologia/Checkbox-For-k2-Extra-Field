@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" client='administrator' type="plugin" group="k2" method="upgrade">
+	<name>K2 - Checkbox Extra Field</name>
+	<author>Uaigo! Tecnologia</author>
+	<authorEmail>contato@uaigo.com.br</authorEmail>
+	<authorUrl>Uagio! Tecnologia</authorUrl>
+	<creationDate>May 2014</creationDate>
+	<copyright>Copyright (C) 2014 All rights reserved to Uaigo! Tecnologia.</copyright>
+	<version>0.0.0</version>
+	<license>Gnu/GPL v3 or later</license>
+	<description>PLG_K2_EXTRA_FIELD_CHECKBOX_DESCRIPTION</description>
+	<files>
+		<filename plugin="extra_field_checkbox">extra_field_checkbox.php</filename>
+                <folder>language</folder>
+	</files>
+        <config>
+            <fields name="params">
+                <fieldset name="basic">                    
+                    <field name="id_field_to_checkbox" type='text' label='PLG_K2_EXTRA_FIELD_CHECKBOX_ID_FIELD_TO_CHECKBOX_LABEL'/>
+                </fieldset>
+            
+           </fields>
+        </config>
+        
+</extension>
