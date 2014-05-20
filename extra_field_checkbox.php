@@ -79,10 +79,12 @@ class plgK2extra_field_checkbox extends K2Plugin
                        label.htmlFor    = checkbox.id;
                        label.appendChild(document.createTextNode(extra_fields_configured[i].name));
                         
-                       has_value_saved = extra_fields_value_saved.value[extra_fields_value_saved.value.indexOf(String(extra_fields_configured[i].value))]
-                       if(has_value_saved >0 && has_value_saved != -1){
-                            checkbox.checked = true;
-                        } 
+                       if(!(extra_fields_value_saved instanceof Array) && extra_fields_value_saved.value.length > 0){ 
+                           has_value_saved = extra_fields_value_saved.value[extra_fields_value_saved.value.indexOf(String(extra_fields_configured[i].value))]
+                           if(has_value_saved >0 && has_value_saved != -1){
+                                checkbox.checked = true;
+                            } 
+                       } 
                        field.appendChild(checkbox);
                        field.appendChild(label); 
                     }
